@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:  hsl(30, 38%, 92%);
+    justify-content: center;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+    height: 450px;
+}
+
+.text{
+    margin: 8px 30px auto 30px;
+    width: 260px;
+}
+.text h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+
+}
+.text h3{
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%)
+}
+.text .p1{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+.prices{
+    display: flex;
+}
+.prices del{
+    margin: 30px auto auto 30px;
+    color: hsl(228, 12%, 48%)
+}
+ img{
+    border-radius: 10px 0 0 10px;
+    height: 450px;
+    box-sizing: border-box;
+    height: 100%;
+}
+img{
+    box-sizing: border-box;
+    height: 100%;
+}
+.prices h1{
+    color:hsl(158, 36%, 37%);
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-top: 14px;
+    align-items: center;
+}
+.button img{
+    justify-self: center;
+    height: 20px;
+    margin-right: 15px;
+}
+.text .p2{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.button:hover{
+    background-color: #384938;
+}
+.img-responsive{
+    display: none;
+}
+@media (max-width: 640px){
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        border-radius: 10px 10px 0 0px;
+        height: auto;
+    }
+    img{
+        display: none;
+    }
+    .img-responsive{
+        display: block;
+        border-radius: 10px 10px 0 0px;
+        height: 245px;
+    }
+    .imagen{
+        display: flex;
+        height: 225px;
+        border-radius: 10px 10px 0 0px;
+    }
+    .prices del{
+        margin: 10px auto auto 10px;
+        color: hsl(228, 12%, 48%)
+    }
+    .text{
+        width: 285px;
+    }
+    .text h3{
+        margin-top: 32px;
+    }
+}
